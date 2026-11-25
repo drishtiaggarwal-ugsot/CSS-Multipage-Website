@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: aquamarine;
+            border: 3px solid black;
+            /* animation-name:sample; */
+            animation-duration: 4s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        .box:hover{
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            /* animation-play-state: paused; */
+        }
+        @keyframes sample{
+            0%{
+                transform:translate(0,0)
+            }
+            25%{
+                transform: translate(70vw,0);
+            }
+            50%{
+                transform: translate(70vw,50vh);
+            }
+            75%{
+                transform: translate(0,50vh);
+            }
+
+            100%{
+                transform:translate(0,0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="box"></div>
+    
+</body>
+</html>
